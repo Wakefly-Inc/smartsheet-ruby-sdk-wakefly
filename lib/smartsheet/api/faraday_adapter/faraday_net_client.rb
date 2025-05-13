@@ -33,7 +33,7 @@ module Smartsheet
           conn.use Middleware::FaradayErrorTranslator
           conn.use Middleware::ResponseParser
 
-          conn.use :gzip
+          #conn.use :gzip
 
           conn.adapter Faraday.default_adapter
         end
